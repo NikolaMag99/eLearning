@@ -1,0 +1,474 @@
+/* Base */
+body {
+  line-height: 1.7;
+  color: gray;
+  font-weight: 300;
+  font-size: 1.1rem; }
+
+
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
+.border-2 {
+  border-width: 2px; }
+
+.text-black {
+  color: #000 !important; }
+
+
+/* Navbar */
+
+/* Basic styling */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+  }
+  body {
+	font-family: sans-serif;
+	font-size: 16px;
+  }
+  nav {
+	background: #222;
+	padding: 0 15px;
+  }
+  a {
+	color: white;
+	text-decoration: none;
+  }
+  .menu,
+  .submenu {
+	list-style-type: none;
+  }
+  .logo {
+	font-size: 20px;
+	padding: 7.5px 10px 7.5px 0;
+  }
+  .item {
+	padding: 10px;
+  }
+  .item.button {
+	padding: 9px 5px;
+  }
+  .item:not(.button) a:hover,
+  .item a:hover::after {
+	color: #ccc;
+  }
+  /* Mobile menu */
+  .menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+  }
+  .menu li a {
+	display: block;
+	padding: 15px 5px;
+  }
+  .menu li.subitem a {
+	padding: 15px;
+  }
+  .toggle {
+	order: 1;
+	font-size: 20px;
+  }
+  .item.button {
+	order: 2;
+  }
+  .item {
+	order: 3;
+	width: 100%;
+	text-align: center;
+	display: none;
+  }
+  .active .item {
+	display: block;
+  }
+  .button.secondary {
+	/* divider between buttons and menu links */
+	border-bottom: 1px #444 solid;
+  }
+  /* Submenu up from mobile screens */
+  .submenu {
+	display: none;
+  }
+  .submenu-active .submenu {
+	display: block;
+  }
+  .has-submenu i {
+	font-size: 12px;
+  }
+  .has-submenu > a::after {
+	font-family: "Font Awesome 5 Free";
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: 900;
+	content: "\f078";
+	color: white;
+	padding-left: 5px;
+  }
+  .subitem a {
+	padding: 10px 15px;
+  }
+  .submenu-active {
+	background-color: #111;
+	border-radius: 3px;
+  }
+  
+  /* Tablet menu */
+  @media all and (min-width: 700px) {
+	.menu {
+	  justify-content: center;
+	}
+	.logo {
+	  flex: 1;
+	}
+	.item.button {
+	  width: auto;
+	  order: 1;
+	  display: block;
+	}
+	.toggle {
+	  flex: 1;
+	  text-align: right;
+	  order: 2;
+	}
+	/* Button up from tablet screen */
+	.menu li.button a {
+	  padding: 10px 15px;
+	  margin: 5px 0;
+	}
+	.button a {
+	  background: #0080ff;
+	  border: 1px royalblue solid;
+	}
+	.button.secondary {
+	  border: 0;
+	}
+	.button.secondary a {
+	  background: transparent;
+	  border: 1px #0080ff solid;
+	}
+	.button a:hover {
+	  text-decoration: none;
+	}
+	.button:not(.secondary) a:hover {
+	  background: royalblue;
+	  border-color: darkblue;
+	}
+  }
+  /* Desktop menu */
+  @media all and (min-width: 960px) {
+	.menu {
+	  align-items: flex-start;
+	  flex-wrap: nowrap;
+	  background: none;
+	}
+	.logo {
+	  order: 1;
+	}
+	.drop{
+		order: 0;
+		position: relative;
+		display: block;
+		width: auto;
+	}
+	.item {
+	  order: 0;
+	  position: relative;
+	  display: block;
+	  width: auto;
+	}
+	.button {
+	  order: 2;
+	}
+	.submenu-active .submenu {
+	  display: block;
+	  position: absolute;
+	  left: 0;
+	  top: 68px;
+	  background: #111;
+	}
+	.toggle {
+	  display: none;
+	}
+	.submenu-active {
+	  border-radius: 0;
+	}
+  }
+  
+
+
+
+ /* End nav */
+
+
+.site-logo {
+  position: relative;
+  font-weight: 900;
+  font-size: 1.3rem; }
+  .site-logo a {
+    color: #fff; }
+
+
+.courses-title {
+  padding-bottom: 13rem;
+  background: #7971ea; }
+  .courses-title .section-title {
+    color: #fff; }
+
+.courses-entry-wrap {
+  margin-top: -282px; }
+  @media (max-width: 1199.98px) {
+    .courses-entry-wrap {
+      margin-top: -246px; } }
+
+.nonloop-block-14 .owl-stage {
+  padding-top: 5rem;
+  padding-bottom: 5rem; }
+
+.course {
+  -webkit-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.3);
+  -webkit-transition: .3s all ease-in-out;
+  -o-transition: .3s all ease-in-out;
+  transition: .3s all ease-in-out;
+  top: 0;
+  position: relative; }
+  .course .course-inner-text {
+    position: relative;
+    padding-top: 35px !important; }
+  .course .course-price {
+    position: absolute;
+    padding: 10px 15px;
+    background: #7971ea;
+    color: #fff;
+    top: -20px;
+    right: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px; }
+  .course .meta {
+    font-size: .9rem;
+    display: block;
+    margin-bottom: .9rem; }
+    .course .meta span {
+      margin-right: .5rem; }
+  .course h3 {
+    font-size: 1.15rem;
+    color: #000; }
+  .course .stats {
+    font-size: .9rem; }
+  .course:hover {
+    top: -10px;
+    -webkit-box-shadow: 0 2px 22px -1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 22px -1px rgba(0, 0, 0, 0.3); }
+
+
+
+/***********************************************************sign**********************************************************************/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+.sign * {
+	box-sizing: border-box;
+}
+
+.sign {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	margin: -20px 0 50px;
+}
+
+.sign h1 {
+	font-weight: bold;
+	margin: 0;
+}
+
+.sign h2 {
+	text-align: center;
+}
+
+.sign p {
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 20px 0 30px;
+}
+
+
+.sign a {
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+}
+
+.sign button {
+	border-radius: 20px;
+	border: 1px solid #7971ea;
+	background-color: #7971ea;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+.sign button:active {
+	transform: scale(0.95);
+}
+
+.sign button:focus {
+	outline: none;
+}
+
+.sign button.ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
+}
+
+.sign form {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
+.sign input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+
+.sign .container {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 768px;
+	max-width: 100%;
+	min-height: 480px;
+}
+
+.sign .form-container {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	transition: all 0.6s ease-in-out;
+}
+
+.sign .sign-in-container {
+	left: 0;
+	width: 50%;
+	z-index: 2;
+}
+
+.sign .container.right-panel-active .sign-in-container {
+	transform: translateX(100%);
+}
+
+.sign .sign-up-container {
+	left: 0;
+	width: 50%;
+	opacity: 0;
+	z-index: 1;
+}
+
+.sign .container.right-panel-active .sign-up-container {
+	transform: translateX(100%);
+	opacity: 1;
+	z-index: 5;
+	animation: show 0.6s;
+}
+
+
+.sign .overlay-container {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	transition: transform 0.6s ease-in-out;
+}
+
+.sign .container.right-panel-active .overlay-container{
+	transform: translateX(-100%);
+}
+
+.sign .overlay {
+	background: #8a41ff;
+	background: -webkit-linear-gradient(to right, #431e6e, #9a41ff);
+	background: linear-gradient(to right, #220f53, #7441ff);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	color: #FFFFFF;
+	position: relative;
+	left: -100%;
+	height: 100%;
+	width: 200%;
+	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.sign .container.right-panel-active .overlay {
+	transform: translateX(50%);
+}
+
+.sign .overlay-panel {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.sign .overlay-left {
+	transform: translateX(-20%);
+}
+
+.sign .container.right-panel-active .overlay-left {
+	transform: translateX(0);
+}
+
+.sign .overlay-right {
+	right: 0;
+	transform: translateX(0);
+}
+
+.sign .container.right-panel-active .overlay-right {
+	transform: translateX(20%);
+}
+
+
+.checked {
+	color: orange;
+  }
+
+  
+  
+
+/***********************************************************sign**********************************************************************/
